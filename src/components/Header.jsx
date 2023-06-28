@@ -1,14 +1,15 @@
-import React from 'react';
-import '../CSS/Header.css'
-import { Menu } from '@mui/icons-material';
+import React from "react";
+import "../CSS/Header.css";
+import { Menu } from "@mui/icons-material";
 
 const Header = () => {
-    return (
-        <header>
-            <Menu/>
-            <h2>this is a header</h2>
-        </header>
-    );
-}
+  return (
+    <header>
+      <div className="header__left">
+        <Menu />
+      </div>
+    </header>
+  );
+};
 
 export default Header;
