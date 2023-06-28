@@ -6,6 +6,16 @@
     list-style: none;
 }
 
+.container{
+    height: 100%;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    padding: 0 1em;
+}
+
 img{
     object-fit: contain;
 }
