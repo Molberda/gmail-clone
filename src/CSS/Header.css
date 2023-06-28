@@ -15,3 +15,18 @@ header{
     height: 4em;
     margin-left: .1em;
 }
+
+.header__middle{
+    display: flex;
+    align-items: center;
+    flex: 0.7;
+    background-color: whitesmoke;
+    padding: .5em;
+    border-radius: .5em;
+}
+
+.header__middle > .MuiSvgIcon-root{
+    color: grey;
+}
+
+/* MINUTE 35:00 */
