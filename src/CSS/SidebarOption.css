@@ -1,7 +1,7 @@
 .sidebarOption{
     display: flex;
     align-items: center;
-    height: 4em;
+    height: 3em;
     padding: 0 .8em;
     border-top-right-radius: 1.3em;
     border-bottom-right-radius: 1.3em;
@@ -12,6 +12,14 @@
 .sidebarOption:hover,
 .sidebarOption:hover > h3,
 .sidebarOption:hover > p{
+    background-color: #fcecec;
+    color: #c04b37;
+    font-weight: 700 !important;
+}
+
+.sidebarOption--active,
+.sidebarOption--active > h3,
+.sidebarOption--active > p{
     background-color: #fcecec;
     color: #c04b37;
     font-weight: 700 !important;
@@ -32,6 +40,10 @@
 .sidebarOption > p{
     font-weight: 300;
     display: none;
+}
+
+.sidebarOption--active > p{
+    display: inline;
 }
 
 .sidebarOption:hover > p{

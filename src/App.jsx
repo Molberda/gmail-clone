@@ -6,10 +6,8 @@ import Sidebar from "./components/Sidebar";
 function App() {
   return (
     <div className="app">
-        <Header />
-        <Sidebar />
-        <h1 className="title">lets build gmail</h1>
-
+      <Header />
+      <Sidebar />
     </div>
   );
 }

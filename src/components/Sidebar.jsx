@@ -11,8 +11,8 @@ const Sidebar = () => {
         Compose
       </Button>
 
-      <SidebarOption Icon={<Inbox/>} title='inbox' number={54} />
-      <SidebarOption Icon={<Star/>} title='starred' number={32} />
+      <SidebarOption Icon={<Inbox/>} title='inbox' number={54} selected={true} />
+      <SidebarOption Icon={<Star/>} title='starred' number={32} selected={false} />
     </div>
   );
 };
