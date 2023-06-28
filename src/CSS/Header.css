@@ -1,11 +1,10 @@
 header {
-    width: 100%;
-    border-bottom: 0.15em solid whitesmoke;
-}
-
-.header__row{
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 0.15em solid whitesmoke;
+  padding: 0 1em;
 }
 
 .header__left {
@@ -43,4 +42,8 @@ header {
 .header__right {
   display: flex;
   align-items: center;
+}
+
+.MuiAvatar-root{
+  margin-left: .25em;
 }

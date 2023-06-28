@@ -16,6 +16,14 @@
     padding: 0 1em;
 }
 
+figure{
+    display: flex;
+}
+
 img{
     object-fit: contain;
+}
+
+.app__row{
+    flex-direction: column;
 }

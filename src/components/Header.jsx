@@ -12,8 +12,6 @@ import { Avatar, IconButton } from "@mui/material";
 const Header = () => {
   return (
     <header>
-      <div className="container header__container">
-        <div className="row header__row">
           <div className="header__left">
             <IconButton>
               <Menu />
@@ -39,8 +37,6 @@ const Header = () => {
             </IconButton>
             <Avatar />
           </div>
-        </div>
-      </div>
     </header>
   );
 };

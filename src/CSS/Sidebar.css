@@ -10,3 +10,14 @@
     border-radius: 2em !important;
     box-shadow: 0 .1em .2em -.05em rgba(0, 0, 0, 0.75);
 }
+
+.sidebar__footer{
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar__footerIcons{
+    display: flex;
+    justify-content: center;
+    gap: .5em;
+}
