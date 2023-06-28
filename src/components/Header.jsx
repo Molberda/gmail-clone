@@ -8,6 +8,10 @@ const Header = () => {
       <div className="header__left">
         <Menu />
       </div>
+
+      <div className="header__middle"></div>
+
+      <div className="header__right"></div>
     </header>
   );
 };
