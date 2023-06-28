@@ -4,5 +4,5 @@
     color: black !important;
     padding: 1em !important;
     border-radius: 2em !important;
-    box-shadow: 0 .1em .2em -.1em rgba(0, 0, 0, 0.75);
+    box-shadow: 0 .1em .2em -.05em rgba(0, 0, 0, 0.75);
 }
