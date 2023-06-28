@@ -1,6 +1,6 @@
 import React from "react";
 import "../CSS/Header.css";
-import { Menu } from "@mui/icons-material";
+import { ArrowDropDown, Menu, Search } from "@mui/icons-material";
 import { IconButton } from "@mui/material";
 
 const Header = () => {
@@ -16,7 +16,11 @@ const Header = () => {
         />
       </div>
 
-      <div className="header__middle"></div>
+      <div className="header__middle">
+        <Search/>
+        <input placeholder="Search Mail" type="text" />
+        <ArrowDropDown/>
+      </div>
 
       <div className="header__right"></div>
     </header>

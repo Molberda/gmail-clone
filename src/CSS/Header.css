@@ -5,7 +5,13 @@ header{
     border-bottom: .15em solid whitesmoke;
 }
 
+.header__left{
+    display: flex;
+    align-items: center;
+
+}
+
 .header__left > img{
     height: 4em;
-    margin-left: .5em;
+    margin-left: .1em;
 }
