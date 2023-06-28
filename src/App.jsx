@@ -7,8 +7,9 @@ function App() {
   return (
     <div className="app">
         <Header />
-        <Sidebar/>
+        <Sidebar />
         <h1 className="title">lets build gmail</h1>
+
     </div>
   );
 }
