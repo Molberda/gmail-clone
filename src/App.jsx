@@ -18,6 +18,7 @@ function App() {
             <Route path="/mail" element={<Mail/>}/>
           </Routes>
         </div>
+      
       </div>
     </Router>
   );
