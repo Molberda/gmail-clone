@@ -31,4 +31,5 @@ img{
 .app__body{
     display: flex;
     height: 100vh;
+    padding-top: .5em;
 }

@@ -23,8 +23,9 @@
 }
 
 .emailRow__title {
+  margin-left: 0.5em;
   font-size: 1em;
-  flex: .3;
+  flex: 0.3;
   text-transform: capitalize;
 }
 
