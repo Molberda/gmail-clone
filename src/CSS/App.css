@@ -27,3 +27,7 @@ img{
 .app__row{
     flex-direction: column;
 }
+
+.app__body{
+    display: flex;
+}

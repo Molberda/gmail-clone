@@ -4,7 +4,7 @@ import '../CSS/Mail.css'
 
 const Mail = () => {
     return (
-        <div>
+        <div className='email'>
             test mail
         </div>
     );
