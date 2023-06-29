@@ -1,0 +1,24 @@
+.section{
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    min-width: 13em;
+    cursor: pointer;
+    border-width: 0 !important;
+}
+
+.section--selected{
+    background-color: whitesmoke;
+    border-width: .15em !important;
+}
+
+.section:hover{
+    background-color: whitesmoke;
+    border-width: .15em !important;
+}
+
+.section > h4{
+    text-transform: capitalize;
+    font-size: .8em;
+    margin-left: .8em;
+}
