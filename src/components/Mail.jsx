@@ -1,14 +1,30 @@
 import React from "react";
 import "../CSS/Mail.css";
 import { IconButton } from "@mui/material";
-import { ArrowBack, CheckCircle, Delete, Email, Error, LabelImportant, MoreVert, MoveToInbox, WatchLater } from "@mui/icons-material";
+import {
+  ArrowBack,
+  CheckCircle,
+  Delete,
+  Email,
+  Error,
+  ExitToApp,
+  LabelImportant,
+  MoreVert,
+  MoveToInbox,
+  Print,
+  UnfoldMore,
+  WatchLater,
+} from "@mui/icons-material";
+import { useNavigate } from "react-router-dom";
 
 const Mail = () => {
+  const navigateTo = useNavigate();
+
   return (
     <div className="mail">
       <div className="mail__tools">
         <div className="mail__toolsLeft">
-          <IconButton>
+          <IconButton onClick={() => navigateTo("/")}>
             <ArrowBack />
           </IconButton>
           <IconButton>
@@ -36,7 +52,31 @@ const Mail = () => {
             <MoreVert />
           </IconButton>
         </div>
-        <div className="mail__toolsRight"></div>
+        <div className="mail__toolsRight">
+          <IconButton>
+            <UnfoldMore />
+          </IconButton>
+          <IconButton>
+            <Print />
+          </IconButton>
+          <IconButton>
+            <ExitToApp />
+          </IconButton>
+        </div>
+      </div>
+      <div className="mail__body">
+        <div className="mail__bodyHeader">
+          <h2>Subject</h2>
+          <figure>
+            <LabelImportant />
+          </figure>
+          <p className="mail__title">title</p>
+          <p className="mail__time">10pm</p>
+        </div>
+
+        <div className="mail__message">
+          <p>this is a message</p>
+        </div>
       </div>
     </div>
   );
