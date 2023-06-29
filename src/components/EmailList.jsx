@@ -55,7 +55,7 @@ const EmailList = () => {
       <div className="emailList__list">
         <EmailRow
           title="twitch"
-          subject="hello fellow steamer"
+          subject="hey fellow steamer!!!"
           description="this is a test"
           time="10pm"
         />

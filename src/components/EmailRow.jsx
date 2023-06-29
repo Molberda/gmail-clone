@@ -1,23 +1,31 @@
 import React from "react";
 import "../CSS/EmailRow.css";
 import { Checkbox, IconButton } from "@mui/material";
-import { LabelImportantOutlined, StarBorderOutlined } from "@mui/icons-material";
+import {
+  LabelImportantOutlined,
+  StarBorderOutlined,
+} from "@mui/icons-material";
 
 const EmailRow = ({ title, subject, description, time }) => {
   return (
     <div className="emailRow">
       <div className="emailRow__options">
-        <Checkbox/>
+        <Checkbox />
         <IconButton>
-            <StarBorderOutlined/>
+          <StarBorderOutlined />
         </IconButton>
         <IconButton>
-            <LabelImportantOutlined/>
+          <LabelImportantOutlined />
         </IconButton>
       </div>
-      <div className="emailRow__title"></div>
-      <div className="emailRow__message"></div>
-      <div className="emailRow__description"></div>
+      <h3 className="emailRow__title">{title}</h3>
+      <div className="emailRow__message">
+        <h4>
+          {subject}
+          <span className="emailRow__description"> - {description}</span>
+        </h4>
+      </div>
+      <p className="emailRow__time">{time}</p>
     </div>
   );
 };
