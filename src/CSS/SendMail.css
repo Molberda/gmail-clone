@@ -9,14 +9,13 @@
   z-index: 2000;
   border-top-left-radius: 0.8em;
   border-top-right-radius: 0.8em;
-  padding: .5em 1em;
   display: flex;
   flex-direction: column;
-  border: 0.15em solid whitesmoke;
   box-shadow: 0 0 0.6em 0.5em rgba(0, 0, 0, 0.24);
 }
 
 .sendMail__header {
+  padding: .25em 1em;
   display: flex;
   justify-content: space-between;
   align-items: center;

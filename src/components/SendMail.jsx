@@ -27,17 +27,17 @@ const SendMail = () => {
         <input
           name="to"
           placeholder="To"
-          type="text"
+          type="email"
           {...register('to',{ required: true })}
           />
-          { errors.to && <p className="sendMail__error">asdfasd</p>}
+          { errors.to && <p className="sendMail__error">This field is required!</p>}
         <input
           name="subject"
           placeholder="Subject"
           type="text"
           {...register('subject',{ required: true })}
           />
-          { errors.subject && <p className="sendMail__error">asdfasd</p>}
+          { errors.subject && <p className="sendMail__error">This field is required!</p>}
         <input
           name="message"
           placeholder="Message..."
@@ -45,7 +45,7 @@ const SendMail = () => {
           className="sendMail__message"
           {...register('message', {required: true})}
           />
-          { errors.message && <p className="sendMail__error">asdfasd</p>}
+          { errors.message && <p className="sendMail__error">This field is required!</p>}
         <div className="sendMail__options">
           <Button
             className="sendMail__send"
