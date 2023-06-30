@@ -3,6 +3,8 @@ import "../CSS/SendMail.css";
 import { Button, IconButton } from "@mui/material";
 import { Close } from "@mui/icons-material";
 import { useForm } from "react-hook-form";
+import { useDispatch } from "react-redux";
+import { closeSendMessage } from "../features/mailSlice";
 
 const SendMail = () => {
   const { register, handleSubmit, watch, formState: {errors} } = useForm();
@@ -11,11 +13,13 @@ const SendMail = () => {
     console.log(data)
   }
 
+  const dispatch = useDispatch()
+
   return (
     <div className="sendMail">
       <div className="sendMail__header">
         <h3>New Message</h3>
-        <IconButton className="sendMail__close">
+        <IconButton onClick={() => dispatch(closeSendMessage())} className="sendMail__close">
           <Close />
         </IconButton>
       </div>
