@@ -5,7 +5,7 @@ import { Close } from "@mui/icons-material";
 import { useForm } from "react-hook-form";
 
 const SendMail = () => {
-  const { register, handleSubmit, watch, errors } = useForm();
+  const { register, handleSubmit, watch, formState: {errors} } = useForm();
 
   const onSubmit = (data) => {
     console.log(data)
@@ -21,16 +21,17 @@ const SendMail = () => {
       </div>
       <form onSubmit={handleSubmit(onSubmit)}>
         <input
-          name="to"
+          name="To"
           placeholder="To"
           type="text"
-          {...register('name',{ required: true })}
-        />
+          {...register('To',{ required: true })}
+          />
+          { errors.To && <p className="sendMail__error">asdfasd</p>}
         <input
           name="subject"
           placeholder="Subject"
           type="text"
-          {...register('subject',{ required: true })}
+          ref={register('subject',{ required: true })}
         />
         <input
           name="message"
