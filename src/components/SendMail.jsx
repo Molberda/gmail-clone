@@ -21,25 +21,27 @@ const SendMail = () => {
       </div>
       <form onSubmit={handleSubmit(onSubmit)}>
         <input
-          name="To"
+          name="to"
           placeholder="To"
           type="text"
-          {...register('To',{ required: true })}
+          {...register('to',{ required: true })}
           />
-          { errors.To && <p className="sendMail__error">asdfasd</p>}
+          { errors.to && <p className="sendMail__error">asdfasd</p>}
         <input
           name="subject"
           placeholder="Subject"
           type="text"
-          ref={register('subject',{ required: true })}
-        />
+          {...register('subject',{ required: true })}
+          />
+          { errors.subject && <p className="sendMail__error">asdfasd</p>}
         <input
           name="message"
           placeholder="Message..."
           type="text"
           className="sendMail__message"
           {...register('message', {required: true})}
-        />
+          />
+          { errors.message && <p className="sendMail__error">asdfasd</p>}
         <div className="sendMail__options">
           <Button
             className="sendMail__send"

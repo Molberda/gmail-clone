@@ -55,3 +55,11 @@ outline: none;
   margin: 1em !important;
   color: whitesmoke !important;
 }
+
+.sendMail__error{
+  font-size: .8em;
+  background-color: white;
+  color: red;
+  text-align: right;
+  padding: .3em;
+}
