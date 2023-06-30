@@ -7,7 +7,7 @@ import { useForm } from "react-hook-form";
 const SendMail = () => {
   const { register, handleSubmit, watch, formState: {errors} } = useForm();
 
-  const onSubmit = (data) => {
+  function onSubmit(data){
     console.log(data)
   }
 
