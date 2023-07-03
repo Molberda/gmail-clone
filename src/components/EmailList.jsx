@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../CSS/EmailList.css";
 import { Checkbox, IconButton } from "@mui/material";
 import {
@@ -17,6 +17,13 @@ import Section from "./Section";
 import EmailRow from "./EmailRow";
 
 const EmailList = () => {
+
+  const [emails, setEmails] = useState([]);
+
+  useEffect(() => {
+    
+  }, []);
+  
   return (
     <div className="emailList">
       <div className="emailList__settings">
