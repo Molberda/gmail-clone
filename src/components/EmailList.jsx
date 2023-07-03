@@ -15,15 +15,24 @@ import {
 } from "@mui/icons-material";
 import Section from "./Section";
 import EmailRow from "./EmailRow";
+import { db } from "../firebase";
 
 const EmailList = () => {
-
   const [emails, setEmails] = useState([]);
 
   useEffect(() => {
-    
+    db.collection("emails")
+      .orderBy("timestamp", "desc")
+      .onSnapshot((snapshot) =>
+        setEmails(
+          snapshot.docs.map((doc) => ({
+            id: doc.id,
+            data: doc.data()
+          }))
+        )
+      );
   }, []);
-  
+
   return (
     <div className="emailList">
       <div className="emailList__settings">
