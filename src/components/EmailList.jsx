@@ -73,7 +73,8 @@ const EmailList = () => {
           <EmailRow 
           id={id}
           key={id}
-          title={subject}
+          title={to}
+          subject={subject}
           description={message}
           time={new Date(timestamp?.seconds * 1000).toUTCString()}
           />
