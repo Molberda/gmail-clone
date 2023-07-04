@@ -15,22 +15,24 @@
   display: flex;
 }
 
-.emailRow__message {
-  display: flex;
-  flex: 0.8;
-  align-items: center;
-  font-size: 0.8em;
-}
 
 .emailRow__title {
   margin-left: 0.5em;
   font-size: 1em;
   flex: 0.3;
   text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.emailRow__message {
+  display: flex;
+  align-items: center;
+  font-size: 0.8em;
+  flex: 0.8;
 }
 
 .emailRow__message > h4 {
-  width: 28em;
+  max-width: 80%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -43,7 +45,9 @@
 }
 
 .emailRow__time {
+  flex: .1;
   padding-right: 1em;
   font-size: 0.7em;
   font-weight: bold;
+  white-space: nowrap;
 }
