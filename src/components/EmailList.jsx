@@ -27,7 +27,7 @@ const EmailList = () => {
         setEmails(
           snapshot.docs.map((doc) => ({
             id: doc.id,
-            data: doc.data()
+            data: doc.data(),
           }))
         )
       );
@@ -69,6 +69,15 @@ const EmailList = () => {
         <Section icon={<LocalOffer />} title="promotion" color="green" />
       </div>
       <div className="emailList__list">
+        {emails.map(({ id, data: { to, subject, message, timestamp } }) => (
+          <EmailRow 
+          id={id}
+          key={id}
+          title={subject}
+          description={message}
+          time={new Date(timestamp?.seconds * 1000).toUTCString()}
+          />
+        ))}
         <EmailRow
           title="twitch"
           subject="hey fellow steamer!!!"
