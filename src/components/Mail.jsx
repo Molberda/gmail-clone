@@ -16,9 +16,12 @@ import {
   WatchLater,
 } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { selectOpenMail } from "../features/mailSlice";
 
 const Mail = () => {
   const navigateTo = useNavigate();
+  const selectedMail = useSelector(selectOpenMail)
 
   return (
     <div className="mail">
@@ -66,16 +69,16 @@ const Mail = () => {
       </div>
       <div className="mail__body">
         <div className="mail__bodyHeader">
-          <h2>Subject</h2>
+          <h2>{selectedMail?.subject}</h2>
           <figure>
             <LabelImportant />
           </figure>
-          <p className="mail__title">title</p>
-          <p className="mail__time">10pm</p>
+          <p className="mail__title">{selectedMail?.title}</p>
+          <p className="mail__time">{selectedMail?.time}</p>
         </div>
 
         <div className="mail__message">
-          <p>this is a message</p>
+          <p>{selectedMail?.description}</p>
         </div>
       </div>
     </div>
