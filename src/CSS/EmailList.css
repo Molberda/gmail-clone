@@ -20,5 +20,7 @@
     display: flex;
     background-color: white;
     border-bottom: .1em solid whitesmoke;
-    z-index: 999;
+    z-index: 1000;
 }
+
+/* https://youtu.be/b7nrXjS6Dqs?t=14029 */

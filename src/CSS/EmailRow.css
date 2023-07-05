@@ -25,15 +25,14 @@
 }
 
 .emailRow__message {
-  flex: .9;
+  flex: .8;
   display: flex;
   align-items: center;
-  flex-direction: row;
   font-size: 0.8em;
 }
 
 .emailRow__message > h4 {
-  max-width: 80%;
+  width: 30em;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -46,6 +45,8 @@
 }
 
 .emailRow__time {
+  flex: 1;
+  text-align: right;
   padding-right: 1em;
   font-size: 0.7em;
   font-weight: bold;

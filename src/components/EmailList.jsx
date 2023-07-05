@@ -91,6 +91,144 @@ const EmailList = () => {
           description="this is a test"
           time="10pm"
         />
+        <EmailRow
+          title="twitch"
+          subject="hey fellow steamer!!!"
+          description="this is a test"
+          time="10pm"
+        />
+        <EmailRow
+          title="twitch"
+          subject="hey fellow steamer!!!"
+          description="this is a test"
+          time="10pm"
+        />
+        <EmailRow
+          title="twitch"
+          subject="hey fellow steamer!!!"
+          description="this is a test"
+          time="10pm"
+        />
+        <EmailRow
+          title="twitch"
+          subject="hey fellow steamer!!!"
+          description="this is a test"
+          time="10pm"
+        />
+        <EmailRow
+          title="twitch"
+          subject="hey fellow steamer!!!"
+          description="this is a test"
+          time="10pm"
+        />
+        <EmailRow
+          title="twitch"
+          subject="hey fellow steamer!!!"
+          description="this is a test"
+          time="10pm"
+        />
+        <EmailRow
+          title="twitch"
+          subject="hey fellow steamer!!!"
+          description="this is a test"
+          time="10pm"
+        />
+        <EmailRow
+          title="twitch"
+          subject="hey fellow steamer!!!"
+          description="this is a test"
+          time="10pm"
+        />
+        <EmailRow
+          title="twitch"
+          subject="hey fellow steamer!!!"
+          description="this is a test"
+          time="10pm"
+        />
+        <EmailRow
+          title="twitch"
+          subject="hey fellow steamer!!!"
+          description="this is a test"
+          time="10pm"
+        />
+        <EmailRow
+          title="twitch"
+          subject="hey fellow steamer!!!"
+          description="this is a test"
+          time="10pm"
+        />
+        <EmailRow
+          title="twitch"
+          subject="hey fellow steamer!!!"
+          description="this is a test"
+          time="10pm"
+        />
+        <EmailRow
+          title="twitch"
+          subject="hey fellow steamer!!!"
+          description="this is a test"
+          time="10pm"
+        />
+        <EmailRow
+          title="twitch"
+          subject="hey fellow steamer!!!"
+          description="this is a test"
+          time="10pm"
+        />
+        <EmailRow
+          title="twitch"
+          subject="hey fellow steamer!!!"
+          description="this is a test"
+          time="10pm"
+        />
+        <EmailRow
+          title="twitch"
+          subject="hey fellow steamer!!!"
+          description="this is a test"
+          time="10pm"
+        />
+        <EmailRow
+          title="twitch"
+          subject="hey fellow steamer!!!"
+          description="this is a test"
+          time="10pm"
+        />
+        <EmailRow
+          title="twitch"
+          subject="hey fellow steamer!!!"
+          description="this is a test"
+          time="10pm"
+        />
+        <EmailRow
+          title="twitch"
+          subject="hey fellow steamer!!!"
+          description="this is a test"
+          time="10pm"
+        />
+        <EmailRow
+          title="twitch"
+          subject="hey fellow steamer!!!"
+          description="this is a test"
+          time="10pm"
+        />
+        <EmailRow
+          title="twitch"
+          subject="hey fellow steamer!!!"
+          description="this is a test"
+          time="10pm"
+        />
+        <EmailRow
+          title="twitch"
+          subject="hey fellow steamer!!!"
+          description="this is a test"
+          time="10pm"
+        />
+        <EmailRow
+          title="twitch"
+          subject="hey fellow steamer!!!"
+          description="this is a test"
+          time="10pm"
+        />
       </div>
     </div>
   );
