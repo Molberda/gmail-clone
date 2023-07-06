@@ -1,6 +1,8 @@
 .emailList{
     flex: 1;
     overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: 0;
 }
 
 .emailList::-webkit-scrollbar{
