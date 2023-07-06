@@ -28,6 +28,5 @@ function App() {
   );
 }
 
-// https://youtu.be/b7nrXjS6Dqs?t=12453
 
 export default App;

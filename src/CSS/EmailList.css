@@ -23,4 +23,6 @@
     z-index: 1000;
 }
 
-/* https://youtu.be/b7nrXjS6Dqs?t=14029 */
+.emailList__list{
+    padding-bottom: 1em;
+}
