@@ -8,8 +8,19 @@ import {
   Search,
 } from "@mui/icons-material";
 import { Avatar, IconButton } from "@mui/material";
+import { useSelector } from "react-redux";
+import { selectUser } from "../features/userSlice";
 
 const Header = () => {
+
+  const user = useSelector(selectUser)
+
+  const signOut = () => {
+
+
+
+  }
+
   return (
     <header>
           <div className="header__left">
@@ -35,7 +46,7 @@ const Header = () => {
             <IconButton>
               <Notifications />
             </IconButton>
-            <Avatar />
+            <Avatar onClick={signOut} src={user?.photoUrl}/>
           </div>
     </header>
   );
