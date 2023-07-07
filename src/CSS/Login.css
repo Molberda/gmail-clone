@@ -16,3 +16,7 @@
 .login__container > figure > img {
     object-fit: contain;
 }
+
+.login__container > button {
+    text-transform: capitalize;
+}

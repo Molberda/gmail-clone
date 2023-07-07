@@ -16,9 +16,9 @@ const Login = () => {
           displayName: user.displayName,
           email: user.email,
           photoUrl: user.photoURL,
-        }));
-    });
-    
+        }))
+    })
+    .catch(error => alert(error.message)) 
   }
   return (
     <div className="login">
@@ -29,7 +29,7 @@ const Login = () => {
             alt=""
           />
         </figure>
-        <Button onClick={() => signIn()}>Login</Button>
+        <Button variant="contained" onClick={() => signIn()}>LogIn</Button>
       </div>
     </div>
   );
