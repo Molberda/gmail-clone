@@ -1,7 +1,12 @@
 import React from "react";
 import "../CSS/Login.css";
+import { Button } from "@mui/material";
+import { auth } from "../firebase";
 
 const Login = () => {
+    const signIn = () => {
+        auth
+    }
   return (
     <div className="login">
       <div className="login__container">
@@ -11,6 +16,7 @@ const Login = () => {
             alt=""
           />
         </figure>
+        <Button>Login</Button>
       </div>
     </div>
   );

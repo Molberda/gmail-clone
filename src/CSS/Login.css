@@ -4,6 +4,15 @@
     height: 100vh;
 }
 
+.login__container{
+    display: flex;
+    flex-direction: column;
+}
+
 .login__container > figure {
     height: 15em;
+}
+
+.login__container > figure > img {
+    object-fit: contain;
 }
